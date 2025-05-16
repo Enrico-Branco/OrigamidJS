@@ -1,0 +1,39 @@
+:root {
+  --cor-principal: #FFBB55;
+  --fonte-principal: 'IBM Plex Mono', monospace;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-principal);
+  height: 59px;
+  width: 1612px;
+  column-gap: 10px;
+  padding-left: 10px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  color: #222222;
+  font-family: var(--fonte-principal);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px;
+}
