@@ -1,6 +1,15 @@
 :root {
   --cor-principal: #FFBB55;
   --fonte-principal: 'IBM Plex Mono', monospace;
+  --cor-fundo: #FAF6ED;
+}
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+p {
+  margin: 0px;
 }
 
 * {
@@ -36,4 +45,80 @@ header ul li a {
   font-weight: 700;
   letter-spacing: 1px;
   padding: 10px;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 96px;
+  font-weight: 200;
+  color: #222222;
+  margin-top: 40px;
+  line-height: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 900px 1fr;
+}
+
+section {
+  grid-column: 2/3;
+}
+
+.container-raposa {
+  display: flex;
+  margin-top: 36px;
+  column-gap: 30px;
+}
+
+.container-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-texto h3{
+  line-height: 15px;
+}
+
+.imagens {
+  width: 282px;
+  height: 355px;
+  overflow-y: scroll;
+}
+
+img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+}
+
+.texto-destaque {
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  color: #E54;
+}
+
+.texto {
+  font-family: Helvetica, Arial;
+  line-height: 1.2;
+  color: #222222;
+  width: 470px;
+  margin-bottom: 10px;
 }
