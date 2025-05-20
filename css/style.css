@@ -47,7 +47,7 @@ header ul li a {
   padding: 10px;
 }
 
-h1 {
+.titulo {
   font-family: "Playfair Display SC", serif;
   font-size: 96px;
   font-weight: 200;
@@ -59,10 +59,12 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: 1fr 900px 1fr;
+  grid-template-rows: 700px 650px 650px ;
 }
 
-section {
+.animais-fantasticos {
   grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .container-raposa {
@@ -93,19 +95,19 @@ img {
   max-width: 100%;
 }
 
-::-webkit-scrollbar {
+.imagens::-webkit-scrollbar {
   width: 12px; 
 }
 
-::-webkit-scrollbar:horizontal {
+.imagens::-webkit-scrollbar:horizontal {
   height: 12px; 
 }
 
-::-webkit-scrollbar-track {
+.imagens::-webkit-scrollbar-track {
   background: var(--cor-fundo);
 }
 
-::-webkit-scrollbar-thumb {
+.imagens::-webkit-scrollbar-thumb {
   background: var(--cor-principal);
 }
 
@@ -121,4 +123,23 @@ img {
   color: #222222;
   width: 470px;
   margin-bottom: 10px;
+}
+
+.faq {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.faq .texto-destaque {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.faq .texto {
+  width: 700px;
+}
+
+.faq div {
+  margin-top: 68px;
+  margin-left: 110px;
 }
