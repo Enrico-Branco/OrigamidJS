@@ -59,7 +59,7 @@ header ul li a {
 .grid {
   display: grid;
   grid-template-columns: 1fr 900px 1fr;
-  grid-template-rows: 700px 650px 650px ;
+  grid-template-rows: 700px 650px 650px 750px ;
 }
 
 .animais-fantasticos {
@@ -142,4 +142,56 @@ img {
 .faq div {
   margin-top: 68px;
   margin-left: 110px;
+}
+
+.numeros {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.numeros-div {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  margin-left: 110px;
+  margin-top: 68px;
+  column-gap: 200px;
+}
+
+.numeros-div h4{
+  font-family: 'Playfair Display SC';
+  font-size: 32px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.numeros-div p{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  color: #E54;
+  font-weight: 600;
+}
+
+.contato {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.contato-flex {
+  display: flex;
+  column-gap: 25px;
+  margin-top: 68px;
+  margin-left: 110px;
+}
+
+.contato img {
+  display: block;
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.contato p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  margin-bottom: 16px;
 }
